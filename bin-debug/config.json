@@ -1,0 +1,80 @@
+{
+    "components": 
+    {
+        "editor":{
+                "schild":{
+                    "id":"schildeditor",
+                    "title":"",
+                    "path":"components/Schild.swf",
+                    "info": {
+                        "content" : "Foobar",
+                        "position" : {
+                            "x" : 100,
+                            "y" : 100
+                        }
+                    },
+                    "position" : {
+                        "x" : 100,
+                        "y" : 100
+                    }
+                },
+                "anzeige":{
+                    "id":"anzeige",
+                    "title":"",
+                    "path":"components/Anzeige.swf",
+                    "position" : {
+                        "x" : 100,
+                        "y" : 100
+                    }
+                },
+                "flyer":{
+                    "id":"flyer",
+                    "title":"Flyer",
+                    "path":"components/Flyer.swf",
+                    "position" : {
+                        "x" : 100,
+                        "y" : 100
+                    }
+                },
+                "mappe":{
+                    "id":"mappe",
+                    "title":"Mappe",
+                    "path":"components/Mappe.swf",
+                    "position" : {
+                        "x" : 100,
+                        "y" : 100
+                    }
+                }
+            
+        },
+        "sidepanel":{
+            "id":"sidepanel",
+            "title":"Sidepanel",
+            "path":"components/SidePanel.swf",
+            "position" : {
+                "x" : 100,
+                "y" : 100
+            }
+        },
+        "startscreen":{
+            "id":"startscreen",
+            "title":"",
+            "path":"components/StartScreen.swf",
+            "position" : {
+                "x" : 200,
+                "y" : 100
+            }
+        }
+    },
+    "navigation" : {
+
+    },
+    "background": {
+        "id": "background",
+        "path" : "imgs/background.jpg",
+        "position" : {
+                "x" : 10,
+                "y" : 10
+        }
+    }
+}

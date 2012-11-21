@@ -1,0 +1,5 @@
+﻿package com.vargamultimedia.base{	import com.vargamultimedia.printtool.models.vo.ComponentVo;		import flash.display.DisplayObject;	import flash.events.Event;		import mx.core.UIComponent;
+		public class BaseFlexSprite extends UIComponent	{				private var cmpInfo : ComponentVo;		protected var rawView : DisplayObject;		protected var _ctrlList : Array = [];				public function initCtrl() : void		{			registerControler();		}				public function get ctrlList():Array
+		{
+			return _ctrlList;
+		}		public function setCmpInfo(info : ComponentVo) : BaseFlexSprite		{			this.cmpInfo = info;			this.init();			return this;		}				protected function init() : void		{			this.x = this.cmpInfo.getViewPoint().x;			this.y = this.cmpInfo.getViewPoint().y;		}				public function setRawView(view : DisplayObject) : void		{			this.rawView = view;			this.addChild(view);		}				protected function registerControler() : void		{			dispatchEvent(new BaseFlexSpriteEvent(BaseFlexSpriteEvent.REGISTER_CONTROLER_COMPLETE));		}	}}

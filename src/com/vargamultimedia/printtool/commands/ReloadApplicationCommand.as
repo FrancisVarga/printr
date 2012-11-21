@@ -1,0 +1,2 @@
+﻿package com.vargamultimedia.printtool.commands{	import com.vargamultimedia.printtool.events.ApplicationEvent;		import spark.components.WindowedApplication;		import org.robotlegs.mvcs.Command;
+		public class ReloadApplicationCommand extends Command	{		override public function execute():void		{			WindowedApplication(this.contextView).removeAllElements();			dispatch(new ApplicationEvent(ApplicationEvent.APPLICATION_STARTUP));		}	}}
